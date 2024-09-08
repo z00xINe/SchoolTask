@@ -1,0 +1,166 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    color: #02457a;
+    border-style: none;
+}
+
+body {
+    background-color: #f1f1f1;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.image {
+    position: absolute;
+    top: 110px;
+    right: 100px;
+    height: 400px;
+    weight: 300px;
+}
+
+
+.form {
+    text-align: left;
+}
+
+nav {
+    text-align: left;
+    width: 98%;
+    border-radius: 15px;
+
+}
+
+li {
+    padding: 10px;
+    display: inline-block;
+}
+
+a:link {
+    text-decoration: none;
+    color: #02457A;
+}
+
+li :hover {
+    color: #97cadb;
+}
+
+::selection {
+    background-color: #02457A;
+    color: #02457A;
+}
+
+
+button {
+    background-color: #02457A;
+    color: #d6e8ee;
+    border-color: #001b4b;
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+}
+
+.input {
+    border-bottom: 2px solid #02457A;
+    background: transparent;
+    width: 240px;
+    height: 20px;
+    padding: 10px;
+    margin: 0px 5px;
+}
+
+textarea {
+    background: transparent;
+    border: 2px solid #02457A;
+    border-radius: 15px;
+
+    outline: #02457A;
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+}
+
+
+.a {
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #d6e8ee;
+    color: #02457A;
+
+}
+
+.radio {
+
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+
+.space {
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+nav h2 {
+    color: #02457A;
+
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    margin: 0 6px;
+
+
+}
+
+nav ul li a {
+    color: #02457A;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover {
+    color: #97cadbb9;
+
+}
+
+.Edit {
+    margin: 10px;
+    text-decoration: none;
+    font-size: large;
+    color: #001B4B;
+    background-color: #02457A;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    right: 41%;
+}
+
+.Edit:hover {
+    background-color: darkgray;
+}
+
+.pro {
+    background: transparent;
+    border-radius: 50px 50px;
+    align-items: center;
+    border: #001B4B solid 2px;
+}

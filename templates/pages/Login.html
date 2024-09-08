@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/sign.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Login</title>
+
+</head>
+
+<body>
+<script src="{% static 'js/Login.js' %}"></script>
+    <div class="container">
+        <nav>
+            <h2>TeachHub</h2>
+        </nav>
+    </div>
+    <form method="POST" class="form">
+        {% csrf_token %}
+        <img src="{% static 'image/login.png' %}" class="img">
+        <div class="m">
+            <h1>Log<span>In</span></h1>
+        <div class="dif">
+        Do not have account?
+            <a href="http://127.0.0.1:8000/signup/">SignUp</a>
+        </div>
+        <br>
+
+        <input type="text" placeholder="username" class="input" id="user" name="user">
+
+
+        <input type="password" placeholder="password" class="input" id="pass" name="pass">
+
+
+
+        <input id="admin" type="radio" name="as" value="Admin" class="radio">
+        <label for="admin" class="space">Admin</label>
+
+
+        <input id="teacher" type="radio" name="as" value="Teacher" class="radio">
+        <label for="teacher">Teacher</label>
+
+        <button type="button" class="login" onclick="Login()">Log in</button>
+
+        </div>
+    </form>
+   
+</body>
+
+</html>

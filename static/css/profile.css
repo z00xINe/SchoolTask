@@ -1,0 +1,164 @@
+* {
+    font-family: open sans;
+    color: #02457a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*.rectangle {
+    width: 70%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}*/
+
+.img {
+    width: 150px;
+    background: transparent;
+    border-radius: 50px 50px;
+    align-items: center;
+    border: #001B4B solid 2px;
+
+}
+
+a:link {
+    text-decoration: none;
+    color: #02457A;
+}
+
+
+.pro {
+    background: transparent;
+    border-radius: 50px 50px;
+    align-items: center;
+    border: #001B4B solid 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+
+}
+
+nav h2 {
+    color: #02457A;
+
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    margin: 0 6px;
+
+
+}
+
+nav ul li a {
+    color: #02457A;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover {
+    color: #97cadbb9;
+
+}
+
+
+.edit:hover {
+    background-color: #97cadbb9;
+    color: #001b4b;
+    cursor: pointer;
+}
+
+.form {
+    margin: 0 32% 0 8%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+input {
+    border: none;
+    border-bottom-width: medium;
+    border-bottom-style: none;
+    border-bottom-color: currentcolor;
+    outline: none;
+    border-bottom: 2px solid #02457A;
+    background: transparent;
+    margin-right: -25%;
+    width: 89%;
+}
+
+body {
+    background-color: #f1f1f1;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+textarea {
+    background: transparent;
+    border: 2px solid #02457A;
+    border-radius: 15px;
+    outline: #02457A;
+    padding: 20px;
+    width: 474px;
+    height: 302px;
+}
+
+.save,
+.edit {
+    background: #02457A;
+    border-radius: 10px;
+    color: #d6e8ee;
+    margin-top: 35px;
+    display: block;
+    margin: 20px;
+    width: 350px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-left: 88%;
+}
+
+.save:hover,
+.edit:hover {
+    background-color: #97cadbb9;
+    color: #001b4b;
+    cursor: pointer;
+}
+
+.pa {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding-right: 15%;
+    padding-left: 13%;
+}
+
+.but {
+    position: absolute;
+    left: 50%;
+
+}
+
+.imag {
+    width: 82%;
+}

@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>View Tasks</title>
+</head>
+
+<body>
+    <script src="{% static 'js/CompletedTasks.js' %}"></script>
+    <div class="container">
+        <nav>
+            <a href="http://127.0.0.1:8000">
+                <h2>Teach<span>Hub</span></h2>
+            </a>
+            <ul>
+
+                <li>
+                    <a href="TeacherPage.html">TeacherPage</a>
+                </li>
+                <li>
+                   <a href="ProfilePage.html"><img src="{%  static 'image/download.png' %}" class="pro" width="20px"></a>
+                <a href="ProfilePage.html" class="wel"></a>
+                </li>
+                <li>
+                    <a href="Login.html" class="sign">Sign out</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+
+    <form method="POST">
+        {% csrf_token %}
+        <a target="_self" href="CompletedTasks.html" class="links">
+            Completed Tasks
+        </a>
+        <div class="radio">
+            <pre> <input type="radio" name="Piority" id="0" onclick="pi(0)" checked> <label for="0" class="space"> All </label>      <input type="radio" name="Piority" id="1" onclick="pi(1)"> <label for="1" class="space"> Low       </label><input type="radio" name="Piority" id="2" onclick="pi(2)"><label for="2" class="space"> Medium      </label><input type="radio" name="Piority" id="3" onclick="pi(3)"><label for="3" class="space"> High        </label></pre>
+        </div>
+        <div class="ava_tasks"></div>
+    </form>
+
+</body>
+
+</html>

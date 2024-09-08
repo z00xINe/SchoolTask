@@ -1,0 +1,143 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.container {
+    margin-top: 25px;
+}
+
+h2 {
+    text-align: center;
+    color: #001B4B;
+}
+
+body {
+    background-image: url(design.png);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.pro {
+    background: transparent;
+    border-radius: 50px 50px;
+    align-items: center;
+    border: #02457A solid 2px;
+}
+
+nav h2 {
+    color: #02457A;
+}
+
+a:link {
+    text-decoration: none;
+    color: #02457A;
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+nav ul li a {
+    color: #02457A;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover {
+    color: #97cadbb9;
+}
+
+.ava_tasks,
+.com_tasks {
+    display: flex;
+    align-items: center;
+    width: 89%;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.task {
+    background-color: #f1f1f1;
+    ;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    width: 20em;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 15px;
+    transition: 0.7s ease;
+    position: relative;
+    margin-top: 5%;
+    overflow-wrap: break-word;
+}
+
+.task:hover {
+    transform: scale(1.1);
+}
+
+.task h4 {
+    color: #02457A;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.task p {
+    color: black;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 25px 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 100;
+    padding: 10px 15px;
+    background-color: #fff;
+    transition: 0.7s ease;
+    border-radius: 25px;
+}
+
+.buttons button:hover {
+    background-color: darkgray;
+}
+
+.con a {
+    text-decoration: none;
+    font-size: large;
+    color: #02457A;
+
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: 1%;
+    margin-right: 41%;
+}
+
+.task p{
+    color: #001B4B;
+}
+.col a h2{
+    margin-top: 50px;
+}

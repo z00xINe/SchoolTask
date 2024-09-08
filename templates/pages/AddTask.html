@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static 'css/task.css' %}>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Add Task</title>
+</head>
+
+<body>
+    <script src={% static 'js/AddTask.js' %}></script>
+    <div class="container"></div>
+    <nav>
+        <a href="http://127.0.0.1:8000">
+            <h2>TeachHub</h2>
+        </a>
+        
+        <ul>
+
+            <li>
+              <a href="ProfilePage.html"><img src="{%  static 'image/download.png' %}" class="pro" width="20px"></a>
+                <a href="ProfilePage.html" class="wel"></a>
+            </li>
+            <li>
+                <a href="Login.html" class="sign"></a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    <img src="{% static 'image/AddTASK.png' %}" class="image">
+    <form method="POST" class="form" id="post-form">
+        {% csrf_token %}
+        <pre>
+                                     <input type="text" id="TaskId"  placeholder="Task Id" class="input" name="TaskId">
+
+
+                                    <input type="text" id="TaskTitle" name="TaskTitle"  placeholder="Task Title" class="input">
+
+
+                                     <input type="text" id="TeacherName" name="TeacherName" placeholder="Teacher Name" class="input">
+
+
+                                    <textarea name="description" id="5" placeholder="Description" cols="30" rows="10"></textarea>
+
+
+                                    <label class="space">Piority</label>
+
+                                    <input type="radio" name="Piority" id="1" value="Low"> <label for="1" class="space"> Low</label>
+
+                                    <input type="radio" name="Piority" id="2" value="Medium"><label for="2" class="space"> Medium</label>
+
+                                    <input type="radio" name="Piority" id="3" value="High"><label for="3"class="space"> High</label>
+
+
+                                    <button type="submit">Submit</button>
+        </pre>
+    </form>
+
+</body>
+
+</html>

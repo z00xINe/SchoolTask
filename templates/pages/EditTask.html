@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static 'css/task.css' %}>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Edit Task</title>
+</head>
+
+<body>
+    <script src={% static 'js/EditTask.js' %}></script>
+    <div class="container"></div>
+    <nav>
+        <a href="http://127.0.0.1:8000">
+            <h2>Teach<span>Hub</span></h2>
+        </a>
+        <ul>
+
+            <li>
+                <a href="ProfilePage.html"><img src="{%  static 'image/download.png' %}" class="pro" width="20px"></a>
+                <a href="ProfilePage.html" class="wel"></a>
+            </li>
+            <li>
+                <a href="Login.html" class="sign">Sign out</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    <hr>
+    <img src="{% static 'image/edit.png' %}" class="image">
+    <form class="form" method="post" id="post-form">
+        {% csrf_token %}
+        <pre>
+            <input type="text" name="TaskId" id="TaskId" readonly placeholder="Task Id" class="input" autofocus>
+        
+        
+            <input type="text" name="TaskTitle" id="TaskTitle"  placeholder="Task Title" class="input">
+
+
+             <input type="text" name="TeacherName" id="TeacherName" placeholder="Teacher Name" class="input">
+             
+              
+            <textarea name="subject" id="5" placeholder="Description" cols="30" rows="10"></textarea>
+
+
+                <label >Piority</label><br> 
+                <input type="radio" name="Piority" id="1"><label for="1"> Low</label>
+
+                <input type="radio" name="Piority" id="2"><label for="2"> Medium</label>
+
+                <input type="radio" name="Piority" id="3"><label for="3"> High</label>
+
+ 
+                <a href="Admin/"><button onclick="Update(event)" type="submit">Submit</button></a>
+        </pre>
+
+    </form>
+
+</body>
+
+</html>

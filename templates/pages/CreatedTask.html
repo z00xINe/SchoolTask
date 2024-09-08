@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin page</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <script src="{% static 'js/AdminHome.js' %}"></script>
+    <div class="container">
+        <nav>
+            <a href="http://127.0.0.1:8000">
+                <h2>Teach<span>Hub</span></h2>
+            </a>
+            <ul>
+
+                <li>
+                    <a href="AdminHome.html">Adminpage</a>
+                </li>
+                <li>
+                    <a href="ProfilePage.html"><img src="{%  static 'image/download.png' %}" class="pro" width="20px"></a>
+                <a href="ProfilePage.html" class="wel"></a>
+                </li>
+                <li>
+                    <a href="Login.html" class="sign">Sign out</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <p class="tit">Created Tasks</p>
+    <div class="con"></div>
+</body>
+
+</html>

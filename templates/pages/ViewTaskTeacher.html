@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+    <title>View Tasks</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="http://127.0.0.1:8000">
+                <h2>TeachHub</h2>
+            </a>
+            <ul>
+
+                <li>
+                    <a href="TeacherPage.html">TeacherPage</a>
+                </li>
+                <li>
+                    <a href="ProfilePage.html"><img src="{% static 'image/download.png' %}" class="pro" width="20px"></a>
+                    <a href="ProfilePage.html">profile</a>
+                </li>
+                <li>
+                    <a href="Login.html">Sign out</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+
+
+    <form>
+        <a target="_self" href="AvailableTasks.html" class="links">
+            Available Tasks
+        </a>
+        <div class="ava_tasks"></div>
+    </form>
+    <form action="">
+        <a target="_self" href="CompletedTasks.html" class="links">
+            Completed Tasks
+        </a>
+        <div class="ava_tasks"></div>
+    </form>
+
+</body>
+
+</html>

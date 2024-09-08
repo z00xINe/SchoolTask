@@ -1,0 +1,49 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%  static 'css/teacher.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Teacher Page</title>
+</head>
+
+<body>
+    <script src="{% static 'js/TeacherPage.js' %}"></script>
+    <div class="container">
+        <nav>
+            <a href="http://127.0.0.1:8000">
+                <h2>Teach<span>Hub</span></h2>
+            </a>
+            <ul>
+                <li>
+                    <a href="ProfilePage.html"><img src="{% static 'image/download.png' %}" class="pro" width="20px"></a>
+                    <a href="ProfilePage.html" class="wel"></a>
+                </li>
+                <li>
+                    <a href="Login.html" class="sign">Sign out</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <form action="">
+        <br><br>
+        <div class="con">
+            <a href="AvailableTasks.html"> <h2>Available Tasks</h2></a>
+            <div class="ava_tasks"></div>
+        </div>
+        <div class="col">
+            <a href="CompletedTasks.html">
+                <h2>Completed Tasks</h2>
+            </a>
+        </div>
+       
+        <div class="com_tasks"></div>
+
+
+    </form>
+</body>
+
+</html>

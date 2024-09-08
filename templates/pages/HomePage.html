@@ -1,0 +1,73 @@
+{% load static %}
+
+<!-- #001B4B   #02457A #018ABE #97cadbb9  #D6EBEE -->
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+
+            <h2>TeachHub</h2>
+
+            <ul>
+                <li>
+                    <a href="login/">Login</a>
+                </li>
+                <li>
+                    <a href="signup/">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="welcome">
+            <img src="{% static 'image/home (2).png' %}" class="photo">
+            Manage <br> your tasks <br> quickly.
+
+        </div>
+
+
+        <div class="grid-container">
+            <h2> Our Features</h2>
+            <div class="grid-item1 ">
+                <img src="{% static 'image/add.webp' %}" class="icon">
+                <br>
+                Add Task
+            </div>
+            <div class="grid-item2 ">
+                <img src="{% static 'image/edit icon.png' %}" class="icon">
+                <br>
+                Edit Task
+            </div>
+            <div class="grid-item3 ">
+                <img src="{% static 'image/delete.webp' %}" class="icon">
+                <br>
+                Delete Task
+            </div>
+            <div class="grid-item4 ">
+                <img src="{% static 'image/view.png' %}" class="icon">
+                <br>
+                View Task
+            </div>
+        </div>
+
+
+        <div class="about-section">
+            <h3>About Us</h3>
+            <p>This page details a web application designed to streamline task management and communication within a
+                school environment.</p>
+
+            <p> The core functionality revolves around assigning tasks to teachers and fostering collaboration among
+                them :) </p>
+
+        </div>
+</body>
+
+</html>

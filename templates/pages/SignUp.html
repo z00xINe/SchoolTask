@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="{% static 'css/sign.css' %}">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <script src="{% static 'js/SignUp.js' %}"></script>
+    <div class="container">
+        <nav>
+            <h2>TeachHub</h2>
+        </nav>
+    </div>
+    <form method="POST" class="form" id="post-form">
+        {% csrf_token %}
+        <img src="{% static 'image/signup.png' %}" class="img">
+
+        <div class="f">
+            
+            <h1>Sign<span>Up</span></h1>
+        <div class="dif">
+            Already Registered?
+            <a href="Login.html">Login</a>
+        </div>
+        <br>
+
+
+        <input type="text" required name="user" autofocus placeholder="User" class="input" id="user">
+        
+
+        <input type="email" placeholder="Email" name="email" class="input" id="email">
+
+        <input type="password" required placeholder="Try to get strong password" name="pass" class="input" id="pass">
+
+        <input type="password" required placeholder="Repeat password" class="input" id="Cpass">
+
+        <input type="tel" required placeholder="01*********" class="input" id="num" name="num">
+        
+        <br>
+
+        <div class="sub">
+            <li>Register as:</li>
+            <input id="admin" type="radio" required name="as" value="Admin" class="radio">
+            <label for="admin" class="space">Admin</label>
+
+            <input id="Teacher" type="radio" required name="as" value="Teacher" class="radio">
+            <label for="Teacher" class="space">Teacher</label>
+        </div>
+
+        <input type="submit" onclick="" class="button">
+        <input type="reset" class="button">
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>

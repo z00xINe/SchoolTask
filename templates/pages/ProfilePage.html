@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My profile</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <script src="{% static 'js/ProfilePage.js' %}"></script>
+
+    <div class="container"></div>
+    <nav>
+        <a href="http://127.0.0.1:8000">
+            <h2>Teach<span>Hub</span></h2>
+        </a>
+        <ul>
+
+            <li>
+                <a onclick="toHome()"><img src="{%  static 'image/download.png' %}" class="pro" width="20px"> My Home</a>
+            </li>
+            <li>
+                <a href="Login.html">Sign out</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+
+
+
+    <form method="POST" class="form">
+        {% csrf_token %}
+        <img src="{% static 'image/Profile.png' %}" class="imag">
+        <div class="f">
+            <img src="{% static 'image/download.png' %}" class="img">
+            <div class="pa">
+                <label class="label">type:</label>
+                <input class="input" type="text" name="type" readonly>
+            </div>
+            <div class="pa">
+                <label class="label">user:</label>
+                <input class="input" type="text" name="user" readonly>
+            </div>
+            <div class="pa"><label class="label">email:</label>
+                <input class="input" type="email" name="email" readonly>
+            </div>
+            <div class="pa"><label class="label">phone number:</label>
+                <input class="input" type="text" name="num" readonly>
+            </div>
+            <label class="label">about</label>
+            <textarea class="about" name="about" cols="40" rows="10" readonly></textarea>
+            <div class="but">
+                <a href="http://127.0.0.1:8000/login/ProfilePage.html/"><button type="button" class="edit">Edit</button></a>
+            </div>
+        </div>
+
+
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>
